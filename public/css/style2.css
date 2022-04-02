@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161616;
+}
+section .circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(70% at right -20% );
+}
+ header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+    z-index: 10000;
+    padding-top: 15px;
+}
+
+header.sticky ul li a.active {
+    background: #000;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+header.sticky ul li a:hover
+{
+     background: #000;
+     color: #fff;
+     padding-left: 5px;
+     padding-right: 5px;
+}
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+header .logo
+{
+    position: relative;
+    max-width: 150px;
+}
+header .logo 
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li 
+{
+    list-style: none;
+}
+header .navigation li a
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .textBox h2 
+{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+.content .textBox p
+{
+    color: #fff;
+}
+.content .textBox a 
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #e51e2a;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.swiper-container
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.content .imgBox
+{
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.content .imgBox img 
+{
+    max-width: 400px;
+}
+.swiper-slide .imgBox img
+{
+    position: absolute;
+    bottom: 0;
+    max-height: 100%;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right
+{
+    background-image: none;
+}
+/*--------------------*/
+.intro
+{
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.intro .intro-text
+{
+    position: relative;
+    padding-left: 250px;
+}
+.intro .intro-text h1
+{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #00BFFF;
+}
+.intro .intro-text a 
+{
+    display: inline-block;
+    padding: 10px 50px;
+    background: yellow;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+.intro .intro-img img 
+{
+    max-height: 100%;
+}
+.intro .intro-text .intro-thongtin
+{
+    display: flex;
+}
+.information
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(./img/xd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.information h1
+{
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+}
+
+/*-----*/
+.footer-text-1 h1 {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+.footer-text {
+    padding-top: 30px;
+}
+
+.footer-text-2 span {
+    color: #59815b;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footer-texts-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-texts-1 .footer-texts {
+    color: #fff;
+}
+
+.footer-texts-1 .footer-texts-2 {
+    padding-bottom: 30px;
+}
+
+.footer-texts-1 .footer-texts-2 h2 {
+    color: #fff;
+}
+
+.footer-texts-1 .footer-texts-2 span {
+    color: #59815b;
+}
+/*--------------------*/
+.product-left-1 {
+    display: flex;
+    flex-direction: column;
+}
+.product-left-1 button 
+{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background-color: #59815b;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border: none;
+    display: none;
+}
+.product-left-1:hover button {
+    display: initial;
+}
+.product-left-1 img {
+    max-width: 100%;
+}
+.sale .sale-1
+{
+    padding-top: 30px;
+}
+/*----------------------*/
+.email {
+    padding-top: 50px;
+    background-image: url('img/hii.jpg');
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.email .row {
+    margin: 0;
+    padding: 0;
+}
+
+.email-img img {
+    max-width: 100%;
+}
+
+.email-title {
+    padding-left: 30px;
+    padding-top: 100px;
+    color: #000;
+}
+
+.email-title h3 {
+    padding-top: 80px;
+}
+
+.email-title h1 {
+    font-weight: 900;
+}
+
+.email-title h1 span {
+    color: #59815B;
+}
+
+.email-title .email-from {
+    display: flex;
+    padding-top: 30px;
+}
+
+.email-title .email-from input {
+    border: none;
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+.email-title .email-from button {
+    background: #59815b;
+    padding: 10px 40px;
+    border: none;
+}
+/*----------------------*/
+.sanpham .nav
+{
+    border: none;
+}
+.sanpham .nav li
+{
+    float: right;
+}
+.sanpham .nav li.active a
+{
+    border: none;
+}
+/*----------------------*/
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 40px;
+    }
+    
+    section
+    {
+        padding: 150px 40px;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .content .textBox,
+    .content .imgBox
+    {
+        max-width: 100%;
+    }
+    .swiper-slide
+    {
+        height: 300px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #e51e2a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+    }
+    header .navigation li a
+    {
+        display: inline-block;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 0;
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    .toogle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1000;
+        background: url(./img/close.png);
+    }
+    .toogle.active
+    {
+        position: fixed;
+        right: 40px;
+        background: url(./img/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .intro .intro-text
+    {
+        padding-left: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro .intro-img img
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .email .email-img img {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .email .email-img {
+        padding-top: 50px;
+    }
+
+    .email .email-title {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .email .email-title .email-from {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email .email-title .email-from .form-control {
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 540px)
+{
+
+}
